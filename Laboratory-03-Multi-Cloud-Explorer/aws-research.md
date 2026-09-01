@@ -22,6 +22,7 @@ Amazon RDS – Used to create and manage databases.
 AWS Lambda – Runs code without needing to manage a server.
 
 5. Three Advantages
+   
 Many cloud services to choose from
 
 Can handle small or large workloads
