@@ -29,9 +29,9 @@ Flexible and easy to scale
 
 AWS can be used for:
 
-Hosting websites
-Creating applications
-Storing files and data
-Managing databases
-Artificial intelligence
-Running applications without servers
+*Hosting websites
+*Creating applications
+*Storing files and data
+*Managing databases
+*Artificial intelligence
+*Running applications without servers
