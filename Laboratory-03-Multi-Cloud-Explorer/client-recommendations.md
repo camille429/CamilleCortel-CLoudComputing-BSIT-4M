@@ -32,7 +32,7 @@ AWS is suitable because it can handle **many users worldwide** and can scale whe
 
 **Services:** EC2, S3, RDS, Load Balancing, CloudFront
 
-## Checkpoint 6 – Multi-Cloud Decision Matrix
+## Multi-Cloud Decision Matrix
 
 | Business Scenario | Recommended Platform | Justification |
 |---|---|---|
