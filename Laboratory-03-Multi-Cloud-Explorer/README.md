@@ -1,0 +1,1 @@
+This laboratory explores Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). It compares their services, advantages, infrastructure, and possible solutions for different business scenarios.
