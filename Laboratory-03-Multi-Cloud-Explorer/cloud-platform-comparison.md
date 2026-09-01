@@ -23,13 +23,3 @@ Google Cloud – It is strong in AI, machine learning, data, and Kubernetes.
 
 4. My choice:
 I would choose AWS because it has many services and is flexible for different projects.
-
-## Checkpoint 5 – Matching Cloud Services
-
-| Service Category | AWS | Azure | GCP |
-|---|---|---|---|
-| Virtual Machine | Amazon EC2 | Azure Virtual Machines | Google Compute Engine |
-| Object Storage | Amazon S3 | Azure Blob Storage | Google Cloud Storage |
-| Identity Management | AWS IAM | Microsoft Entra ID | Cloud IAM |
-| SQL Database | Amazon RDS | Azure SQL Database | Cloud SQL |
-| Kubernetes | Amazon EKS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
