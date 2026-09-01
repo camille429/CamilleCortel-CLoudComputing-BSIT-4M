@@ -1,1 +1,14 @@
-This laboratory explores Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). It compares their services, advantages, infrastructure, and possible solutions for different business scenarios.
+# Laboratory 03 – Multi-Cloud Explorer
+
+## Mission Overview
+
+This laboratory explores Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). The activity compares their services and identifies appropriate cloud solutions for different business scenarios.
+
+## Checkpoint 7 – Linux Investigation
+
+### Operating System
+
+Command used:
+
+```bash
+uname -a
