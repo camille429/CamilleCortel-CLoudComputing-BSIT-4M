@@ -1,0 +1,7 @@
+Laboratory-06-Cloud-Deployment-Engineer/
+├── multi-tier-architecture/
+│   ├── docker-compose.yml
+│   └── README.md
+├── screenshots/
+├── reflection.md
+└── README.md
