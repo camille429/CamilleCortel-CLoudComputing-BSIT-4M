@@ -1,6 +1,32 @@
-git init
-git add .
-git commit -m "init: multi-tier project structure"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
+version: '3'
+
+services:
+  db:
+    image: mariadb:10.6
+    container_name: nextcloud-db
+    environment:
+      MYSQL_ROOT_PASSWORD: nextcloud_root
+      MYSQL_PASSWORD: nextcloud_pass
+      MYSQL_DATABASE: nextcloud_db
+      MYSQL_USER: nextcloud_usr
+    volumes:
+      - db:/var/lib/mysql
+    restart: always
+
+  app:
+    image: nextcloud
+    container_name: nextcloud-app
+    ports:
+      - "8000:80"
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: nextcloud_db
+      MYSQL_USER: nextcloud_usr
+      MYSQL_PASSWORD: nextcloud_pass
+    volumes:
+      - app:/var/www/html
+    restart: always
+
+volumes:
+  db:
+  app:
