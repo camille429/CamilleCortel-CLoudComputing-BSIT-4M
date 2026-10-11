@@ -6,18 +6,31 @@ This project implements a **2-tier architecture** deployed using Docker and Dock
 ## Architecture Diagram
 [Client / Browser]
 ↓ (HTTP :8000)
+
 ┌──────────────┐
+
 │ App Tier │
+
 │ nextcloud │ ← Web Interface & Application Logic
+
 │ (Port 8000) │
+
 └──────┬───────┘
+
 │ Internal Docker Network
+
 ↓
+
 ┌──────────────┐
+
 │ Data Tier │
+
 │ mariadb:10.6│ ← Persistent Storage
+
 │ (Database) │
+
 └──────────────┘
+
 
 ## Components
 
