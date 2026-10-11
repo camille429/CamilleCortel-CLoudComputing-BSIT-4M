@@ -49,7 +49,6 @@ This project implements a **2-tier architecture** deployed using Docker and Dock
 - Credentials are passed securely through **environment variables** — not hardcoded in the image
 - Persistent **named volumes** preserve data even when containers are removed
 
-## File Structure
 
 ## Commands Reference
 | Command | Action |
