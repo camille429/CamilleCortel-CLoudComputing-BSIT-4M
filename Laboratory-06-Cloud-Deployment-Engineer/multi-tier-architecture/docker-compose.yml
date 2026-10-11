@@ -3,30 +3,27 @@ version: '3'
 services:
   db:
     image: mariadb:10.6
-    container_name: nextcloud-db
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: nextcloud_root
       MYSQL_PASSWORD: nextcloud_pass
       MYSQL_DATABASE: nextcloud_db
-      MYSQL_USER: nextcloud_usr
+      MYSQL_USER: nextcloud_user
     volumes:
       - db:/var/lib/mysql
-    restart: always
 
-  app:
+  nextcloud:
     image: nextcloud
-    container_name: nextcloud-app
     ports:
       - "8000:80"
+    restart: always
     environment:
       MYSQL_HOST: db
       MYSQL_DATABASE: nextcloud_db
-      MYSQL_USER: nextcloud_usr
+      MYSQL_USER: nextcloud_user
       MYSQL_PASSWORD: nextcloud_pass
-    volumes:
-      - app:/var/www/html
-    restart: always
+    depends_on:
+      - db
 
 volumes:
   db:
-  app:
